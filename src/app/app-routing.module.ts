@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginComponent } from "./components/auth/login/login.component";
-import { RegisterComponent } from "./components/auth/register/register.component";
+import { ImageListComponent } from "./components/image-list/image-list.component";
+import { SearchListComponent } from "./components/search-list/search-list.component";
 
 const routes: Routes = [
   {
-    path: '/',
-    component: LoginComponent
+    path: '',
+    component: ImageListComponent
   },
   {
-    path: '/register',
-    component: RegisterComponent
-  },
+    path: 'search/:search',
+    component: SearchListComponent
+  }
 ];
 
 @NgModule({
